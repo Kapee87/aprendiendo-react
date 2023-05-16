@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import confetti from 'canvas-confetti'
 
 import './App.css'
@@ -13,7 +13,6 @@ function App() {
   const [board, setBoard] = useState(() => {
     const boardFromStorage = window.localStorage.getItem('board')
     if (boardFromStorage) return JSON.parse(boardFromStorage)
-    console.log(boardFromStorage);
     return Array(9).fill(null)
   }
   );
@@ -60,6 +59,9 @@ function App() {
 
   }
 
+  useEffect(() => {
+    console.log('useEFFE');
+  }, [winner])
 
 
   return (
