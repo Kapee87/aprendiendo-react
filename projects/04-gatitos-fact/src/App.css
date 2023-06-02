@@ -1,0 +1,38 @@
+body{
+    background-color: #343434;
+    color: aliceblue;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+section img {
+    max-width: 320px;
+    height: auto;
+}
+button{
+    margin: 1rem auto;
+    border: none;
+    background-color: #9a9292;
+    border-radius: 20px;
+    padding: 1rem;
+    color: antiquewhite;
+    font-weight: bold;
+}
+button:hover{
+    background-color: #bbb8b8;
+}
